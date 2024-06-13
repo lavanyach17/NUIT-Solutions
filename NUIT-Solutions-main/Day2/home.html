@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table id="myTable" class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Place</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>John Doe</td><td>30</td><td>john.doe@example.com</td><td>New York</td></tr>
+            <tr><td>2</td><td>Jane Smith</td><td>25</td><td>jane.smith@example.com</td><td>Los Angeles</td></tr>
+            <tr><td>3</td><td>Mike Johnson</td><td>45</td><td>mike.johnson@example.com</td><td>Chicago</td></tr>
+            <tr><td>4</td><td>Emily Davis</td><td>35</td><td>emily.davis@example.com</td><td>Houston</td></tr>
+            <tr><td>5</td><td>Chris Brown</td><td>28</td><td>chris.brown@example.com</td><td>Phoenix</td></tr>
+            <tr><td>6</td><td>Patricia Wilson</td><td>32</td><td>patricia.wilson@example.com</td><td>Philadelphia</td></tr>
+            <tr><td>7</td><td>Robert Lee</td><td>40</td><td>robert.lee@example.com</td><td>San Antonio</td></tr>
+            <tr><td>8</td><td>Linda Harris</td><td>27</td><td>linda.harris@example.com</td><td>San Diego</td></tr>
+            <tr><td>9</td><td>Michael Clark</td><td>50</td><td>michael.clark@example.com</td><td>Dallas</td></tr>
+            <tr><td>10</td><td>Jessica Lewis</td><td>22</td><td>jessica.lewis@example.com</td><td>San Jose</td></tr>
+            <tr><td>11</td><td>David Walker</td><td>38</td><td>david.walker@example.com</td><td>Austin</td></tr>
+            <tr><td>12</td><td>Sarah Allen</td><td>29</td><td>sarah.allen@example.com</td><td>Jacksonville</td></tr>
+            <tr><td>13</td><td>James Young</td><td>33</td><td>james.young@example.com</td><td>Fort Worth</td></tr>
+            <tr><td>14</td><td>Karen King</td><td>36</td><td>karen.king@example.com</td><td>Columbus</td></tr>
+            <tr><td>15</td><td>Thomas Scott</td><td>41</td><td>thomas.scott@example.com</td><td>Charlotte</td></tr>
+            <tr><td>16</td><td>Lisa Green</td><td>34</td><td>lisa.green@example.com</td><td>San Francisco</td></tr>
+            <tr><td>17</td><td>Mark Hall</td><td>47</td><td>mark.hall@example.com</td><td>Indianapolis</td></tr>
+            <tr><td>18</td><td>Amy Young</td><td>31</td><td>amy.young@example.com</td><td>Seattle</td></tr>
+            <tr><td>19</td><td>Steven Wright</td><td>26</td><td>steven.wright@example.com</td><td>Denver</td></tr>
+            <tr><td>20</td><td>Michelle Adams</td><td>39</td><td>michelle.adams@example.com</td><td>Washington</td></tr>
+            <tr><td>21</td><td>Kevin Nelson</td><td>37</td><td>kevin.nelson@example.com</td><td>Boston</td></tr>
+            <tr><td>22</td><td>Laura Mitchell</td><td>24</td><td>laura.mitchell@example.com</td><td>El Paso</td></tr>
+            <tr><td>23</td><td>Daniel Perez</td><td>42</td><td>daniel.perez@example.com</td><td>Nashville</td></tr>
+            <tr><td>24</td><td>Kimberly Roberts</td><td>48</td><td>kimberly.roberts@example.com</td><td>Detroit</td></tr>
+            <tr><td>25</td><td>Brian Turner</td><td>46</td><td>brian.turner@example.com</td><td>Oklahoma City</td></tr>
+            <tr><td>26</td><td>Nancy Phillips</td><td>44</td><td>nancy.phillips@example.com</td><td>Las Vegas</td></tr>
+            <tr><td>27</td><td>Edward Campbell</td><td>43</td><td>edward.campbell@example.com</td><td>Memphis</td></tr>
+            <tr><td>28</td><td>Rebecca Parker</td><td>21</td><td>rebecca.parker@example.com</td><td>Louisville</td></tr>
+            <tr><td>29</td><td>Joshua Evans</td><td>23</td><td>joshua.evans@example.com</td><td>Baltimore</td></tr>
+            <tr><td>30</td><td>Ashley Collins</td><td>27</td><td>ashley.collins@example.com</td><td>Milwaukee</td></tr>
+            <tr><td>31</td><td>Anthony Stewart</td><td>29</td><td>anthony.stewart@example.com</td><td>Albuquerque</td></tr>
+            <tr><td>32</td><td>Maria Sanchez</td><td>32</td><td>maria.sanchez@example.com</td><td>Tucson</td></tr>
+            <tr><td>33</td><td>Paul Morris</td><td>28</td><td>paul.morris@example.com</td><td>Fresno</td></tr>
+            <tr><td>34</td><td>Susan Reed</td><td>35</td><td>susan.reed@example.com</td><td>Sacramento</td></tr>
+            <tr><td>35</td><td>George Bailey</td><td>31</td><td>george.bailey@example.com</td><td>Kansas City</td></tr>
+            <tr><td>36</td><td>Carol Clark</td><td>26</td><td>carol.clark@example.com</td><td>Long Beach</td></tr>
+            <tr><td>37</td><td>Kenneth Edwards</td><td>45</td><td>kenneth.edwards@example.com</td><td>Atlanta</td></tr>
+            <tr><td>38</td><td>Jessica Miller</td><td>33</td><td>jessica.miller@example.com</td><td>Omaha</td></tr>
+            <tr><td>39</td><td>Matthew Martin</td><td>40</td><td>matthew.martin@example.com</td><td>Raleigh</td></tr>
+            <tr><td>40</td><td>Lisa White</td><td>34</td><td>lisa.white@example.com</td><td>Miami</td></tr>
+            <tr><td>41</td><td>William Jackson</td><td>36</td><td>william.jackson@example.com</td><td>Oakland</td></tr>
+            <tr><td>42</td><td>Barbara Thompson</td><td>39</td><td>barbara.thompson@example.com</td><td>Minneapolis</td></tr>
+            <tr><td>43</td><td>Charles Harris</td><td>44</td><td>charles.harris@example.com</td><td>Tampa</td></tr>
+            <tr><td>44</td><td>Karen Nelson</td><td>46</td><td>karen.nelson@example.com</td><td>Arlington</td></tr>
+            <tr><td>45</td><td>Donald Martinez</td><td>47</td><td>donald.martinez@example.com</td><td>New Orleans</td></tr>
+            <tr><td>46</td><td>Helen Carter</td><td>48</td><td>helen.carter@example.com</td><td>Wichita</td></tr>
+            <tr><td>47</td><td>Joseph Hill</td><td>50</td><td>joseph.hill@example.com</td><td>St. Louis</td></tr>
+            <tr><td>48</td><td>Sarah Baker</td><td>42</td><td>sarah.baker@example.com</td><td>Aurora</td></tr>
+            <tr><td>49</td><td>Daniel Perez</td><td>30</td><td>daniel.perez@example.com</td><td>Pittsburgh</td></tr>
+            <tr><td>50</td><td>Lisa Murphy</td><td>29</td><td>lisa.murphy@example.com</td><td>Cincinnati</td></tr>
+            <tr><td>51</td><td>Mark Moore</td><td>41</td><td>mark.moore@example.com</td><td>Greensboro</td></tr>
+            <tr><td>52</td><td>Patricia Mitchell</td><td>38</td><td>patricia.mitchell@example.com</td><td>Plano</td></tr>
+            <tr><td>53</td><td>Steven Allen</td><td>37</td><td>steven.allen@example.com</td><td>Newark</td></tr>
+            <tr><td>54</td><td>Linda Lopez</td><td>35</td><td>linda.lopez@example.com</td><td>Orlando</td></tr>
+            <tr><td>55</td><td>David King</td><td>32</td><td>david.king@example.com</td><td>Buffalo</td></tr>
+            <tr><td>56</td><td>Jessica Martinez</td><td>31</td><td>jessica.martinez@example.com</td><td>Durham</td></tr>
+            <tr><td>57</td><td>Richard Walker</td><td>30</td><td>richard.walker@example.com</td><td>St. Paul</td></tr>
+            <tr><td>58</td><td>Margaret Hill</td><td>28</td><td>margaret.hill@example.com</td><td>Lincoln</td></tr>
+            <tr><td>59</td><td>Barbara Roberts</td><td>27</td><td>barbara.roberts@example.com</td><td>Chandler</td></tr>
+            <tr><td>60</td><td>James Green</td><td>26</td><td>james.green@example.com</td><td>Madison</td></tr>
+            <tr><td>61</td><td>Elizabeth Hall</td><td>24</td><td>elizabeth.hall@example.com</td><td>Reno</td></tr>
+            <tr><td>62</td><td>Charles Adams</td><td>22</td><td>charles.adams@example.com</td><td>Toledo</td></tr>
+            <tr><td>63</td><td>John Campbell</td><td>25</td><td>john.campbell@example.com</td><td>Irvine</td></tr>
+            <tr><td>64</td><td>Susan Hernandez</td><td>21</td><td>susan.hernandez@example.com</td><td>Fort Wayne</td></tr>
+            <tr><td>65</td><td>Michael Perez</td><td>20</td><td>michael.perez@example.com</td><td>St. Petersburg</td></tr>
+            <tr><td>66</td><td>Mary Nelson</td><td>23</td><td>mary.nelson@example.com</td><td>Laredo</td></tr>
+            <tr><td>67</td><td>William Clark</td><td>34</td><td>william.clark@example.com</td><td>Chula Vista</td></tr>
+            <tr><td>68</td><td>Sarah Lewis</td><td>29</td><td>sarah.lewis@example.com</td><td>Jersey City</td></tr>
+            <tr><td>69</td><td>Joseph Martin</td><td>38</td><td>joseph.martin@example.com</td><td>Scottsdale</td></tr>
+            <tr><td>70</td><td>Mary White</td><td>33</td><td>mary.white@example.com</td><td>San Bernardino</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable({
+                responsive: true // Enable responsiveness
+            });
+        });
+    </script>
+</body>
+</html>

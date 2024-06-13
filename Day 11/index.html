@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naturopathic Doctor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
-        .mrr{
-            margin-left: 70px;
-        }
         .bg{
             background-image: url('background.png');
             background-size: cover; 
@@ -21,12 +20,18 @@
             font-family: 'Playfair Display', serif;
             font-size: 32px;
         }
+        .main_title{
+            font-family: 'Playfair Display', serif;
+        }
+        .sec1{
+            margin-left: 80px;
+        }
         .ser{
             font-size: 22px;
             line-height: 33px;
             font-weight: 400;
         }
-        button{
+        .btttn{
             font-size: 16px;
             border: solid 2px #363636;
             text-align: center;
@@ -35,21 +40,149 @@
             margin-top: 30px;
             display: inline-block;
         }
+        .ser1{
+            font-size: 15px;
+            font-weight: 400;
+            padding-bottom: 5px;
+        }
+
+        .white_offset {
+    outline: solid 2px #fff;
+    outline-offset: -20px;
+}
+.main_image {
+    position: relative;
+    bottom: 268px;
+    left: 20%;
+}
+.box_image_2 {
+    position: absolute;
+    left: 57%;
+}
+.ana{
+    height: 650px;
+}
+.box_image_4 {
+    position: absolute;
+    right: 1%
+    
+}
+.subscription-form {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      max-width: 300px;
+      margin: 0 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .email-input {
+      width: calc(100% - 300px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      /* border-radius: 5px; */
+      font-size: 16px;
+      margin-bottom: 10px;
+      width: 305px;
+        height: 3rem;
+    }
+
+    .subscribe-button {
+      padding: 10px 10px;
+      margin-top: 2px;
+      /* background-color: #007bff; */
+      color: #fff;
+      border: none;
+      /* width: 800px; */
+      /* border-radius: 5px; */
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .gallery {
+            margin-top: 50px;
+            padding-left: 200px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .navbar {
+      transition: background-color 0.3s ease;
+    }
+    .navbar.transparent {
+      background-color: transparent !important;
+    }
+    .navbar.colored {
+      background-color: #125eab !important; /* Bootstrap's light bg color */
+    }
+    .top-right-part {
+    position: absolute;
+    top: 20px;
+    right: 2em;
+    background-color: #fff;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    /* display: grid; */
+    align-content: center;
+}
+.flip:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
     </style>
 </head>
 <body>
+    <nav class="navbar bg-body-tertiary fixed-top transparent">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img  id="navbar-logo" src="s2.png" alt="Logo" style="margin-left: 100px;"></a> 
+             <button class="navbar-toggler top-right-part" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class=""><b><i class="bi bi-list h1"></i></b></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container-fluid">
+        <div class="row sec1">
+            <div class="col-6 align-content-center">
+                <h1 class="main_title"> DR. TORI COWLEY</h1>
+                <p>Naturopathic Doctor | Professional Canadian Beach Volleyball Player</p>
+                <p class="title"><i>“Our potential is one thing. What we do with it is quite another.” – Angela Duckworth</i></p>
+                <button class="btttn">BOOK APOINTMENT</button>
+            </div>
+            <div class="col-6" data-aos="fade-down" >
+                <img src="s1.png"  width="100%" class="ms-3">
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col-5 pt-5">
-                <img src="1.jpg" height="774px" width="516px">
+            <div class="col-5 pt-5" data-aos="flip-left">
+                <img src="1.jpg" class="white_offset" height="774px" width="516px">
             </div>
             <div class="col-lg-7 align-content-center ">
-                <div class="mrr">
                 <h3 class="title">ABOUT DR. TORI COWLEY</h3>
                 <p>Dr. Tori Cowley received her Honours Bachelor of Science from Wilfrid Laurier University. She went on to pursue her Medical Degree from the Canadian College of Naturopathic Medicine. Dr. Cowley travels the world internationally representing Canada in Beach Volleyball on the International World Tour.</p>
 
-                <button>KNOW MORE</button>
-            </div>
+                <button class="btttn">KNOW MORE</button>
 
             </div>
         </div>
@@ -100,13 +233,16 @@
                     <h3 class="title">GENETIC ANALYSIS</h3>
                     <p>Our body is controlled by a set of genetic instructions known as our genome or chromosomal blueprint. Our individual DNA provides codes for everything from eye colour to antibody production. It determines our risk for disease, our reaction to stress, our response to illness or injury and how we respond to food, exercise and medication. As an example, some people seem to respond well to high-protein low-carb diets, while for others it is inefficacious. Some individuals benefit from more exercise while others need to control stress. What fits your body best is all coded in your DNA.
                     </p>
-                    <button>READ MORE</button>
+                    <button class="btttn">READ MORE</button>
                 </div>
 
                 </div>
-                <!-- <div class="col-6 align-self-start"> -->
-                    <!-- <div><img  src="2.png"  alt=""></div> -->
-                    
+                <div class="col-6">
+                    <div class="ana">
+                        <img  src="2.png" class="main_image"  alt="">
+                        <img src="3.jpg" alt="" class="box_image_2">
+                        <img src="4.jpg" alt="" class="box_image_4">
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,7 +250,7 @@
             <h1 class="title">HOW IT WORKS</h1>
             <p>3 Easy Step and Get the Best Treatment</p>
         </div>
-        <div class="container">
+        <div class="container pt-5">
             <div class="row">
                 <div class="col-4">
                     <img src="l7.png" alt="">
@@ -133,21 +269,146 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <img src="6.jpg"  height="372px" width="516px">
+        <div class="container-fluid pb-5">
+            <div class="row pt-5 ms-5 me-3">
+                <div class="col-4" data-aos="fade-up">
+                    <img src="6.jpg" class="white_offset" style="margin-top:100px;" height="300px" width="450px">
                 </div>
-                <div class="col-3">
-                    <img src="7.jpg" height="895px" width="516px">
+                <div class="col-3" data-aos="fade-down">
+                    <img src="7.jpg" class="white_offset" height="525px" width="315px">
                                 </div>
-                <div class="col-5">
-
+                <div class="col-5 pt-4">
+                    <h3 class="title pb-3">CASE STUDIES</h3>
+                    <p>A 39-year-old female with bloating, gut issues, chronic low energy, migraines, poor sleep </p><br>
+                    <i class="bi bi-caret-right-fill fs-5 pb-3"></i> <span> <b>Our Approach</b></span>
+                    <p class="ms-4">It is a long etablished fact that a reader will be distracted by a readable content of a page when looking at its layout</p>
+                    <i class="bi bi-caret-right-fill fs-5 pb-3"></i> <span><b>Outcome</b></span>
+                    <p class="ms-4">It is a long etablished fact that a reader will be distracted by a readable content of a page when looking at its layout</p>
                 </div>
             </div>
         </div>
+        <div class="container-fluid">
+            <div class="row ps-5" style="background-color: rgb(170, 167, 167); height: 450px;">
+                <div class="col-6 text-center" data-aos="fade-right">
+                    <div class="border border-2 border-dark ms-5" style="margin-top: 50px; height:380px; width: 600px;">
+                        <h3 class="title pt-5">MAKE AN APOINTMENT </h3>
+                        <h3 class="title">FOR A CONSULTATION</h3>
+                        <p>HAVE QUESTIONS?</p>
+                        <i class="bi bi-telephone-fill fs-3"> </i><span class="title">123.456.7890</span> <br>
+                        <button class="btttn" style="background-color:  rgb(170, 167, 167);">BOOK CONSULTATION</button>
+                    </div>
+                </div>
+                <div class="col-6" data-aos="fade-left">
+                    <img src="8.jpg" height="450px" >
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-5"> 
+                <h2 class="pd-5 title">FOLLOW US ON INSTAGRAM</h2>
+                <div class="container-fluid gallery">
+                    <div class="row" data-aos="fade-left">
+                        <div class="col-6 col-md-4 col-lg-2  p-1">
+                            <img src="g1.PNG" alt="Image 1" class="flip">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2  p-1">
+                            <img src="g2.PNG" alt="Image 2" class="flip">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2  p-1">
+                            <img src="g3.PNG" alt="Image 3" class="flip">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2  p-1">
+                            <img src="g4.PNG" alt="Image 4" class="flip">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2  p-1">
+                            <img src="g5.PNG" alt="Image 5" class="flip">
+                        </div>
+                        </div>
+                        <div class="row" data-aos="fade-right">
+                        <div class="col-6 col-md-4 col-lg-2  p-1">
+                            <img src="g6.PNG" alt="Image 6" class="flip">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2  p-1">
+                            <img src="g7.PNG" alt="Image 7" class="flip">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2  p-1">
+                            <img src="g8.PNG" alt="Image 8" class="flip">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2  p-1">
+                            <img src="g9.PNG" alt="Image 9" class="flip">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2  p-1">
+                            <img src="g10.PNG" alt="Image 10" class="flip">
+                        </div>
+                    </div>
+                </div>
+                <button class="btttn">FOLLOW ON INSTAGRAM </button>
+        </div>
+        <footer>
+            <div class="container-fluid pt-5">
+                <div class="row" style="background-color: #363636; color: white; padding-top: 70px;">
+                    <div class="col-6" style="padding-left: 100px; margin-bottom: 10px;">
+                        <h3 class="title">LET'S KEEP IN TOUCH</h3>
+                        <p>Subscribe to my newsletter for curated tips, tools and resources</p>
+                        <form class="subscription-form" style="position: relative;">
+                            <input type="email" class="email-input inn">
+                            <button type="submit" class="subscribe-button" style="position: absolute; top: 0; right:0; background-color: #363636; width: 100px;"><b>Subscribe</b></button>
+                        </form>
+
+                        <h3 class="title mt-5">SOCIALISE WITH US</h3>
+                        <i class="bi bi-instagram text-light"></i>
+                        <i class="bi bi-twitter text-light"></i>
+                        <i class="bi bi-facebook text-light"></i>
+                    </div>
+                    <div class="col-3">
+                       <h6 class="ser1">HOME</h6>
+                       <h6 class="ser1">PROGRAM OR SOLUTIONS</h6>
+                       <h6 class="ser1">SERVICES</h6>
+                       <h6 class="ser1">ABOUT US</h6>
+                       <h6 class="ser1">CONTACT US</h6>
+                    </div>
+                    <div class="col-3">
+                        <h5 class="ser1"><b>Phones:</b> 123.456.7890 </h5>
+                        <h5 class="ser1"><b>Email:</b> drtoricowleynd@gmail.com</h5>
+                        <h5 class="ser1"><b>Working hours:</b> <br> Monday: 11am - 6pm<br> Wednesday: 11am - 6pm <br>
+                            Thursday: 11am - 6pm</h5>
+                            
+                    </div>
+                    <hr>
+                    <div class="col-6 mb-3 mt-3"><span style="padding-left: 90px;">© 2024 Dr. Tori Cowley. All Rights Reserved.</span></div>
+                    <div class="col-6 d-flex justify-content-end pe-5 mb-3 mt-3">Designed & Developed by <u>scaleup42.com</u></div>
+                    
+                </div>
+            </div>
+        </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+        <script>
+            window.addEventListener('scroll', function() {
+              const navbar = document.querySelector('.navbar');
+              const logo = document.getElementById('navbar-logo');
+              
+              if (window.scrollY > 50) {
+                navbar.classList.remove('transparent');
+                navbar.classList.add('colored');
+                logo.src = 's3.png'; 
+                logo.style.width = '250px'; 
+                logo.style.height = '100px';
+              } else {
+                navbar.classList.remove('colored');
+                navbar.classList.add('transparent');
+                logo.src = 's2.png';
+                logo.style.width = '200px'; 
+                logo.style.height = '80px'; 
+              }
+            });
+          </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body>
 </html>

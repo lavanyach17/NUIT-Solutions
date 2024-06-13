@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design with Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    /* Custom styles */
+    .section {
+      padding: 20px;
+    }
+
+    /* Media queries */
+    @media (min-width: 768px) {
+      /* Large devices (desktops, 768px and up) */
+      .section {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 767px) {
+      /* Medium and small devices (tablets, 767px and below) */
+      .section {
+        font-size: 16px;
+        line-height: 1.4;
+        text-align: center;
+      }
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: #222324;
+      padding: 20px 0;
+      color: #f6f5f5;
+    }
+    .c3{
+      font-family: 'Playfair Display', serif;
+    }
+    .c2{
+      font-size: 22px;
+            line-height: 33px;
+            font-weight: 400;
+            font-family: 'Playfair Display', serif;
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section with Headings and Paragraphs -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">NUIT SOLUTIONS</h2>
+      <p>We at NUIT are a Team of never-say-die website developers, graphic designers and digital strategists, who strive passionately to help you feature on the Global Web! From logo creation, domain selection and website development to social media optimization, search engine optimization and digital marketing, we handle it all in a seamless and structured process, that helps you sit back and enjoy the results!
+
+      </p>
+    </div>
+  </section><hr>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-lg-4">
+          <h3 class="c3">LET'S KEEP IN TOUCH</h3>
+          <p class="c2">Subscribe for more resources</p>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-messenger"></i>
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-youtube"></i>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-4">
+          <h5 class="c2">HOME</h5>
+          <h5 class="c2">CONTACT US</h5>
+          <h5 class="c2">ABOUT US</h5>
+          <h5 class="c2">SERVICES</h5>
+          <h5 class="c2">PRODUCTS</h5>
+        </div>
+        <div class="col-md-4 col-sm-12 col-lg-4">
+          <h5 class="c2"><b>Phones:</b> 123.456.7890 </h5>
+          <h5 class="c2"><b>Email:</b> drtoricowleynd@gmail.com</h5>
+        </div>
+      </div>
+    </div>
+  </footer><hr>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Admission Form</h5>
+          <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure you want to submit.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Sava & Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="d-flex justify-content-center">
+    <!-- Button to trigger modal -->
+    <button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#exampleModal">
+      SUBMIT
+   </button>
+</div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
